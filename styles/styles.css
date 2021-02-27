@@ -2,12 +2,17 @@
   --main-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
   --accent-color: #2196f3;
+  --main-text-color: #212121;
   --secondary-text-color: #757575;
+  --accent-text-color: #ffffff;
+  --background-color-main: #f5f4fa;
+  --background-color-accent: #2f303a;
+  --logo-text-main: #000000;
 }
 
 body {
   font-family: var(--main-font);
-  color: #212121;
+  color: var(--main-text-color);
 }
 
 .link {
@@ -21,14 +26,14 @@ body {
 /* ================ COMPONENTS ================*/
 
 .modal-btn {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--accent-text-color);
   cursor: pointer;
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -38,6 +43,10 @@ body {
 .img {
   width: 370px;
   height: 294px;
+}
+
+.current.nav-link {
+  color: var(--accent-color);
 }
 
 /* ================ END COMPONENTS ================*/
@@ -50,7 +59,7 @@ body {
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--main-text-color);
 }
 
 .nav-link:hover,
@@ -67,7 +76,7 @@ body {
 }
 
 .logo-studio-header {
-  color: #000000;
+  color: var(--logo-text-main);
 }
 
 .header-contact-link {
@@ -87,24 +96,111 @@ body {
 
 /* ================ HERO ================*/
 
+.hero {
+  background-color: var(--background-color-accent);
+}
 .hero-title {
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  background-color: #2f303a;
-  color: #ffffff;
+  color: var(--accent-text-color);
 }
 
 /* ================ END HERO ================*/
 
 /* ================ SPECIALTIES ================*/
 
+.specs-subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--logo-text-main);
+}
+
+.specs-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
 /* ================ END SPECIALTIES ================*/
 
-.logo-studio-footer {
-  color: #ffffff;
+/* ================ SKILLS ================*/
+
+.skills-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
 }
+
+/* ================ END SKILLS ================*/
+
+/* ================ TEAM ================*/
+
+.team {
+  background-color: var(--background-color-main);
+}
+
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--logo-text-main);
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+.team-occupation {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+/* ================ END TEAM ================*/
+
+/* ================ FOOTER ================*/
+
+.footer {
+  background-color: var(--background-color-accent);
+}
+
+.logo-studio-footer {
+  color: var(--accent-text-color);
+}
+
+.address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--accent-text-color);
+}
+
+.address-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+/* ================ END FOOTER ================*/
