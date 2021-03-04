@@ -16,7 +16,27 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
 }
 
 .link {
@@ -68,9 +88,30 @@ body {
   color: var(--accent-color);
 }
 
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
 /* ================ END COMPONENTS ================*/
 
 /* ================ HEADER ================*/
+
+.header {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.menu {
+  display: flex;
+}
 
 .nav-link {
   text-decoration: none;
@@ -88,7 +129,6 @@ body {
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
-  letter-spacing: 0.03em;
 }
 
 .logo-studio-header {
@@ -121,6 +161,13 @@ body {
   color: var(--accent-text-color);
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 /* ================ END HERO ================*/
 
 /* ================ SPECIALTIES ================*/
@@ -128,14 +175,12 @@ body {
 .specs-subtitle {
   font-weight: 700;
   line-height: 1.17;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo-text-main);
 }
 
 .specs-text {
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 /* ================ END SPECIALTIES ================*/
@@ -147,7 +192,6 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
 
@@ -164,7 +208,6 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--logo-text-main);
 }
 
@@ -172,7 +215,6 @@ body {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
 
@@ -180,7 +222,6 @@ body {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 
@@ -209,7 +250,6 @@ body {
 .examples-img-about {
   font-size: 16px;
   line-height: 1.86;
-  letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 /* ================ END EXAMPLES ================*/
@@ -226,13 +266,11 @@ body {
 
 .address {
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--accent-text-color);
 }
 
 .address-link {
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
