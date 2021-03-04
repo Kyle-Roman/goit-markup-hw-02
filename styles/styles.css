@@ -92,6 +92,10 @@ img {
   height: 294px;
 }
 
+.header-contacts-list {
+  margin-left: 331px;
+}
+
 .current.nav-link {
   color: var(--accent-color);
 }
