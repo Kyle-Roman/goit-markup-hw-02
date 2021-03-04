@@ -118,11 +118,14 @@ img {
 /* ================ HEADER ================*/
 
 .header {
-  display: flex;
-  align-items: center;
   padding-top: 24px;
   padding-bottom: 25px;
   margin: 0 auto;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
 }
 
 .menu {
