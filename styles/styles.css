@@ -99,6 +99,13 @@ img {
   overflow: hidden;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 /* ================ END COMPONENTS ================*/
 
 /* ================ HEADER ================*/
@@ -111,6 +118,11 @@ img {
 
 .menu {
   display: flex;
+}
+
+.nav-item:not(:last-child) {
+  margin-left: 50px;
+  align-items: center;
 }
 
 .nav-link {
